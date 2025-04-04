@@ -1,0 +1,210 @@
+*{
+	margin:0;
+	padding: 0;
+
+	
+}
+
+body {
+  background: white;
+}
+.hed{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mot{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   text-align: center;
+   line-height: 1.8;
+   letter-spacing: 0.5px;
+   word-spacing: 1px;
+}
+header{
+	background-image: url("assests/study.png");
+	position: relative; /* Makes the image positioned inside */
+    
+}
+.info p{
+	text-align: center;
+	font-weight: bold;
+	font-size: xx-large;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 1.6;
+	margin: 25%;
+	color: black;
+}
+.info h1{
+	margin: 35%;
+	color: black;
+	font-family: verdana;
+	font-size: 300%;
+	text-align: left;
+	display: table-row-group;
+	
+}
+aside{
+	float: right;
+	margin: 0 1.5%;
+	width: 30%;
+}
+section{
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
+}
+
+.container{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+
+	flex-basis: content;
+	flex-wrap: wrap;
+	margin-bottom: 30%;
+
+}
+#navbar li{
+	display: block-inline;
+	float: right;
+	font-size: 15px;
+	padding: 5px;
+	margin-right: 20px;
+	list-style-type: none;
+
+	
+}
+#navbar a:hover{
+	color: white;
+}
+#navbar a{
+	text-decoration: none;
+	color: black;
+
+}
+
+.logo{
+	color: white;
+	font-weight: bold;
+	padding:20px;
+	line-height:2.7em;
+	box-shadow: rosybrown;
+	border-bottom-left-radius: 50%;
+	border: 0.1px solid red;
+}
+.btn{
+	background: floralwhite;
+	color: black;
+	font-size: xx-large;
+	align-items: center;
+	max-height: 15%;
+}
+.item{
+	flex-wrap: wrap;
+	display: flexbox;
+}
+footer{
+	
+	background: white;
+	height:700%;
+	width:100%;
+	background: #222;
+   color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+	
+}
+h1{
+	color:black;
+}
+footer p{
+	color: black;
+	text-align: center;
+	
+	margin-top: 1.5%;
+}
+.flex-container{
+	display:flex;
+	flex-direction: row;
+
+}
+.item{
+	width:400px;
+	height:100px;
+	margin: 10px;
+	align-items: center;
+}
+
+table{
+	border: 5px bold whitesmoke;
+}
+#but{
+ position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2{
+  
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   text-align: center;
+   line-height: 1.8;
+   letter-spacing: 0.5px;
+   word-spacing: 1px
+
+}
+.flex-container{
+  overflow: hidden; /* Hides overflowing images */
+  border-radius: 10px; /* Optional: Makes corners rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 50%; /* Half of the page */
+  max-width: 600px; /* Avoids stretching */
+  height: auto;
+}
+.flex-track{
+  display: flex;
+  width: 400%; /* 4 images, 100% each */
+  animation: slide 8s infinite linear
+
+}
+.flex-track img{
+	width: 100%; /* Ensures all images take full width */
+  height: 100%; /* Adjusts height */
+  object-fit: cover;
+   
+}
+ 
+@keyframes slide {
+  0%, 25% { transform: translateX(0); } 
+  30%, 50% { transform: translateX(-100%); } 
+  55%, 75% { transform: translateX(-200%); } 
+} 
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+aside{
+  width: 40%; /* Takes space next to slider */
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  background: #f9f9f9;
+  border-left: 5px solid #ff5733; /* Nice left accent */
+  margin-left: 20px;
+}
